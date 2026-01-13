@@ -1,9 +1,13 @@
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import kevanLogo from './assets/kevan.png'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    alert('Bienvenue sur le compteur de "Du coup" ');
+  }, []);
 
   return (
     <>
